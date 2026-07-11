@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #fff;
+  color: #222;
+}
+
+input,
+select,
+textarea,
+button {
+  background: #ffffff;
+  color: #222;
+  border: 1px solid #ddd;
+  -webkit-text-fill-color: #222;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+input[type="date"],
+select {
+  color-scheme: light;
+}

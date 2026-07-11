@@ -33,17 +33,16 @@ function Register() {
     }
 
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
-        {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          password: formData.password,
-          role: role,
-        }
-      );
-
+    const res = await axios.post(
+  "https://event-registration-website-np4w.onrender.com/api/auth/register",
+  {
+    name: formData.name,
+    email: formData.email,
+    phone: formData.phone,
+    password: formData.password,
+    role: role,
+  }
+);
       alert(res.data.message);
 
       // Clear Form

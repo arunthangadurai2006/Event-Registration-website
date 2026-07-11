@@ -34,7 +34,7 @@ function Booking({ provider }) {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/bookings",
+        "https://event-registration-website-np4w.onrender.com/api/bookings",
         {
           providerName: provider.name,
           customerName: formData.customerName,
